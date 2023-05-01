@@ -47,7 +47,6 @@ while (true) {
     basic.pause(10)
     if (spritex > 5) {
         if (level == 0) {
-            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
@@ -112,8 +111,8 @@ while (true) {
                 # . . . #
                 # # # # #
                 `)
-        } else if (level == 1) {
             Reset()
+        } else if (level == 1) {
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
@@ -170,8 +169,8 @@ while (true) {
                 # . . . #
                 # # # # #
                 `)
-        } else if (level == 2) {
             Reset()
+        } else if (level == 2) {
             basic.pause(100)
             basic.showLeds(`
                 # . . # .
@@ -271,8 +270,8 @@ while (true) {
                 # . . . #
                 # # # # #
                 `)
-        } else if (level == 3) {
             Reset()
+        } else if (level == 3) {
             basic.pause(100)
             basic.showLeds(`
                 . . # . #
@@ -377,8 +376,8 @@ while (true) {
                 # # . # #
                 # . . . .
                 `)
-        } else if (level == 4) {
             Reset()
+        } else if (level == 4) {
             basic.pause(100)
             basic.showLeds(`
                 . . . . #
@@ -435,8 +434,8 @@ while (true) {
                 # # . . #
                 # # # # #
                 `)
-        } else if (level == 5) {
             Reset()
+        } else if (level == 5) {
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
