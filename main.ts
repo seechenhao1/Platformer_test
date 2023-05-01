@@ -219,7 +219,7 @@ while (true) {
                 # . # . #
                 . # # # .
                 `)
-            for (let index = 0; index < 5; index++) {
+            for (let index = 0; index < 2; index++) {
                 basic.showLeds(`
                     . # . # .
                     # . # . #
@@ -276,11 +276,107 @@ while (true) {
             level += 1
             basic.pause(100)
             basic.showLeds(`
-                . . . . .
-                . . . # .
-                . # . # .
-                . . . # .
+                . . # . #
+                # . # . .
+                # . . . #
+                # . . . #
                 # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . # . #
+                # . # . .
+                # # . # #
+                # . # . #
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . # . #
+                # # . # .
+                # . . . #
+                # # . # #
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . # . # #
+                # . . . #
+                . . # . .
+                # . . . #
+                # # . # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                # . . . #
+                . . # . .
+                . . # . .
+                . . # . .
+                # . . . #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . .
+                . # # # .
+                . . # . .
+                . # # # .
+                . . . . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . .
+                # # # # #
+                . . # . .
+                # # # # #
+                . . . . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # # # #
+                . . # . .
+                # # # # #
+                # . . . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # # # #
+                . . . . .
+                # # # # #
+                # . . . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # . # #
+                . . # . .
+                # # . # #
+                # . # . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # . # #
+                . . . . .
+                # # # # #
+                # . . . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # . # #
+                . . . . .
+                # # . # #
+                # . # . .
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                # . . . #
+                # # . # #
+                . . . . .
+                # # . # #
+                # . . . .
                 `)
         } else if (level == 4) {
             spritex = 0
@@ -288,10 +384,58 @@ while (true) {
             level += 1
             basic.pause(100)
             basic.showLeds(`
+                . . . . #
+                # # . # #
                 . . . . .
-                . . . # .
-                . # . # .
-                . . . # .
+                # # . # #
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # . # #
+                . . . . .
+                # # # # #
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # . # #
+                # # # # #
+                . # . . .
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . #
+                # # # # #
+                # . # . .
+                . # . . .
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                # # # # #
+                . . . . .
+                # . # . .
+                . # . . .
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                . . . . .
+                # . # . .
+                . . . . .
+                . # . . .
+                # # # # #
+                `)
+            basic.pause(100)
+            basic.showLeds(`
+                # . . . .
+                # . # . .
+                . . . . .
+                . # . . .
                 # # # # #
                 `)
         } else if (level == 5) {
@@ -306,18 +450,8 @@ while (true) {
                 . . . # .
                 # # # # #
                 `)
-        } else if (level == 6) {
-            spritex = 0
-            spritey = 0
-            level += 1
-            basic.pause(100)
-            basic.showLeds(`
-                . . . . .
-                . . . # .
-                . # . # .
-                . . . # .
-                # # # # #
-                `)
+        } else {
+        	
         }
     }
 }

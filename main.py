@@ -41,7 +41,7 @@ while True:
     speedy = speedy * 0.3
     led.toggle(spritex, spritey)
     basic.pause(10)
-    if spritex > 4:
+    if spritex > 5:
         if level == 0:
             spritex = 0
             spritey = 0
@@ -164,7 +164,7 @@ while True:
             """)
             basic.pause(100)
             basic.show_leds("""
-                . . . . .
+                # . . . .
                                 # . . # #
                                 # # . . #
                                 # . . . #
@@ -176,18 +176,100 @@ while True:
             level += 1
             basic.pause(100)
             basic.show_leds("""
-                . . . . .
-                                . . # # .
-                                # . . # .
-                                . . . # .
+                # . . # .
+                                # # . # #
+                                # # . # #
+                                # # . . #
                                 # # # # #
             """)
             basic.pause(100)
             basic.show_leds("""
-                . . . . .
-                                . . . # .
+                # # . # #
+                                # # . # #
+                                # # . # #
+                                # # # . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # # # # #
+                                # # . # #
+                                # # # # #
+                                # # # . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # # # # #
+                                # # # # #
+                                # # # # #
+                                # # # # #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . # # # .
+                                # # # # #
+                                # # # # #
+                                # # # # #
+                                . # # # .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . # # # .
+                                # . # . #
+                                # # # # #
+                                # . # . #
+                                . # # # .
+            """)
+            for index in range(2):
+                basic.show_leds("""
+                    . # . # .
+                                        # . # . #
+                                        . # . # .
+                                        # . # . #
+                                        . # . # .
+                """)
+                basic.show_leds("""
+                    # . # . #
+                                        . # . # .
+                                        # . # . #
+                                        . # . # .
+                                        # . # . #
+                """)
+            basic.show_leds("""
+                # . # . #
                                 . # . # .
-                                . . . # .
+                                # . # . #
+                                . # . # .
+                                # # # # #
+            """)
+            basic.show_leds("""
+                # . # . #
+                                . # . # .
+                                # . # . #
+                                . . . . #
+                                # # # # #
+            """)
+            basic.show_leds("""
+                # . # . #
+                                . # . # .
+                                # . # . #
+                                . . . . #
+                                # # # # #
+            """)
+            basic.show_leds("""
+                # . # . #
+                                # . # . .
+                                # . # . #
+                                . . . . #
+                                # # # # #
+            """)
+            basic.show_leds("""
+                # . # . #
+                                # . # . .
+                                # . # . #
+                                # . . . #
                                 # # # # #
             """)
         elif level == 3:
