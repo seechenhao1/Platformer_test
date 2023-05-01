@@ -14,6 +14,13 @@ def on_button_pressed_b():
     speedx += 0.9
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
+def Reset():
+    global spritex, spritey, level, speedx, speedy
+    spritex = 0
+    spritey = 0
+    level += 1
+    speedx = 0
+    speedy = 0
 level = 0
 speedx = 0
 speedy = 0
@@ -43,9 +50,7 @@ while True:
     basic.pause(10)
     if spritex > 5:
         if level == 0:
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.show_leds("""
                 . . . . .
@@ -111,9 +116,7 @@ while True:
                                 # # # # #
             """)
         elif level == 1:
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.show_leds("""
                 . . . . .
@@ -171,9 +174,7 @@ while True:
                                 # # # # #
             """)
         elif level == 2:
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.show_leds("""
                 # . . # .
@@ -273,33 +274,171 @@ while True:
                                 # # # # #
             """)
         elif level == 3:
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.show_leds("""
-                . . . . .
-                                . . . # .
-                                . # . # .
-                                . . . # .
+                . . # . #
+                                # . # . .
+                                # . . . #
+                                # . . . #
                                 # # # # #
             """)
-        elif level == 4:
-            spritex = 0
-            spritey = 0
-            level += 1
+            basic.pause(100)
+            basic.show_leds("""
+                . . # . #
+                                # . # . .
+                                # # . # #
+                                # . # . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . # . #
+                                # # . # .
+                                # . . . #
+                                # # . # #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . # . # #
+                                # . . . #
+                                . . # . .
+                                # . . . #
+                                # # . # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # . . . #
+                                . . # . .
+                                . . # . .
+                                . . # . .
+                                # . . . #
+            """)
             basic.pause(100)
             basic.show_leds("""
                 . . . . .
-                                . . . # .
-                                . # . # .
-                                . . . # .
+                                . # # # .
+                                . . # . .
+                                . # # # .
+                                . . . . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . .
+                                # # # # #
+                                . . # . .
+                                # # # # #
+                                . . . . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # # # #
+                                . . # . .
+                                # # # # #
+                                # . . . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # # # #
+                                . . . . .
+                                # # # # #
+                                # . . . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                . . # . .
+                                # # . # #
+                                # . # . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                . . . . .
+                                # # # # #
+                                # . . . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                . . . . .
+                                # # . # #
+                                # . # . .
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # . . . #
+                                # # . # #
+                                . . . . .
+                                # # . # #
+                                # . . . .
+            """)
+        elif level == 4:
+            Reset()
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                . . . . .
+                                # # . # #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                . . . . .
+                                # # # # #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # . # #
+                                # # # # #
+                                # # . . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . #
+                                # # # # #
+                                # . . . #
+                                # # . . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # # # # #
+                                # . . . #
+                                # . . . #
+                                # # . . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                . . . . .
+                                # . . . #
+                                # . . . #
+                                # # . . #
+                                # # # # #
+            """)
+            basic.pause(100)
+            basic.show_leds("""
+                # . . . .
+                                # . . . #
+                                # . . . #
+                                # # . . #
                                 # # # # #
             """)
         elif level == 5:
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.show_leds("""
                 . . . . .
@@ -308,15 +447,5 @@ while True:
                                 . . . # .
                                 # # # # #
             """)
-        elif level == 6:
-            spritex = 0
-            spritey = 0
-            level += 1
-            basic.pause(100)
-            basic.show_leds("""
-                . . . . .
-                                . . . # .
-                                . # . # .
-                                . . . # .
-                                # # # # #
-            """)
+        else:
+            pass

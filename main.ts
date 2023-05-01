@@ -9,6 +9,13 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     speedx += 0.9
 })
+function Reset () {
+    spritex = 0
+    spritey = 0
+    level += 1
+    speedx = 0
+    speedy = 0
+}
 let level = 0
 let speedx = 0
 let speedy = 0
@@ -40,9 +47,7 @@ while (true) {
     basic.pause(10)
     if (spritex > 5) {
         if (level == 0) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
@@ -108,9 +113,7 @@ while (true) {
                 # # # # #
                 `)
         } else if (level == 1) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
@@ -168,9 +171,7 @@ while (true) {
                 # # # # #
                 `)
         } else if (level == 2) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 # . . # .
@@ -271,9 +272,7 @@ while (true) {
                 # # # # #
                 `)
         } else if (level == 3) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . # . #
@@ -379,9 +378,7 @@ while (true) {
                 # . . . .
                 `)
         } else if (level == 4) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . . . #
@@ -403,45 +400,43 @@ while (true) {
                 . . . . #
                 # # . # #
                 # # # # #
-                . # . . .
+                # # . . #
                 # # # # #
                 `)
             basic.pause(100)
             basic.showLeds(`
                 . . . . #
                 # # # # #
-                # . # . .
-                . # . . .
+                # . . . #
+                # # . . #
                 # # # # #
                 `)
             basic.pause(100)
             basic.showLeds(`
                 # # # # #
-                . . . . .
-                # . # . .
-                . # . . .
+                # . . . #
+                # . . . #
+                # # . . #
                 # # # # #
                 `)
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
-                # . # . .
-                . . . . .
-                . # . . .
+                # . . . #
+                # . . . #
+                # # . . #
                 # # # # #
                 `)
             basic.pause(100)
             basic.showLeds(`
                 # . . . .
-                # . # . .
-                . . . . .
-                . # . . .
+                # . . . #
+                # . . . #
+                # # . . #
                 # # # # #
                 `)
         } else if (level == 5) {
-            spritex = 0
-            spritey = 0
-            level += 1
+            Reset()
             basic.pause(100)
             basic.showLeds(`
                 . . . . .
